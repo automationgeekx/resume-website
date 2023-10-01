@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
-    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/styles.css') }}">
 </head>
 <body>
     <section id="intro">
         <div class="content">
-            <img src="/images/IMG_3502.JPG" alt="Your Name" id="profile-image">
+            <img src="{{ url_for('static', filename='images/IMG_3502.JPG') }}" alt="Your Name" id="profile-image">
             <h1>Your Name</h1>
             <p>Welcome to my resume website</p>
         </div>
@@ -26,6 +26,6 @@
             <!-- Contact form or details -->
         </div>
     </section>
-    <script src="/scripts/scripts.js"></script>
+    <script src="{{ url_for('static', filename='scripts/scripts.js') }}"></script>
 </body>
 </html>
